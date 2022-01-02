@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* background: black; */
+  font-family: "IBM Plex Mono", sans-serif;
 }
 
 canvas {
@@ -17,20 +17,20 @@ canvas {
   position: fixed;
   z-index: 1;
   left: 0;
-  top: 0;
+  bottom: 0;
   text-align: center;
   width: 100%;
   padding: 10px;
 }
 
 .button {
+  font-weight: 400;
   border: none;
-  background: white;
-  color: black;
-  padding: 8px 20px;
-  border-radius: 15px;
+  font-size: 1rem;
+  background: black;
+  color: white;
+  padding: 12px 20px;
   cursor: pointer;
   outline: none;
-  margin: 5px;
-  font-family: sans-serif;
+  margin: 0;
 }
