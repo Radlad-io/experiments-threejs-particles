@@ -120,7 +120,7 @@ class Model {
               y: Math.PI,
             },
             {
-              y: 0,
+              y: Math.PI / 1.75,
               duration: 0.7,
               ease: "power3.out",
             }
@@ -144,24 +144,18 @@ class Model {
       ease: "power3.out",
     });
     // TODO: This works but the models need to be more uniform coming from blender
-    if (!this.isActive) {
+    if (this.isActive) {
       gsap.fromTo(
         this.particles.rotation,
         {
           y: Math.PI,
         },
         {
-          y: 0,
+          y: Math.PI / 2,
           duration: 0.7,
           ease: "power3.out",
         }
       );
-
-      // TODO: background transition not working
-      gsap.to("body", {
-        background: this.background,
-        duration: 0.8,
-      });
     }
   }
   remove() {

@@ -19,12 +19,12 @@ Scene & Camera
 ------------------------------*/
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
-  50,
+  25,
   window.innerWidth / window.innerHeight,
   0.1,
   100
 );
-camera.position.z = 5;
+camera.position.z = 8;
 camera.position.y = 1;
 
 /*------------------------------
